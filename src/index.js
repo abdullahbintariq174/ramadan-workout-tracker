@@ -4,18 +4,18 @@ import './index.css';
 import RamadanWorkoutApp from './RamadanWorkoutApp';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
-  faDumbbell, faFireAlt, faWind, faSyncAlt, faWalking, faArrowsAltH,
-  faChevronDown, faShoeprints, faArrowUp, faChevronUp, faArrowDown,
-  faHands, faMountain, faHandPointUp, faExpand, faRunning, faLevelUpAlt,
-  faCompress, faCoffee, faCloud, faHeadSide
+  faDumbbell, faFire, faWind, faSync, faWalking, faArrowsAltH,
+  faChevronDown, faShoes, faArrowUp, faChevronUp, faArrowDown,
+  faHandPaper, faMountain, faHand, faExpand, faRunning, faLevelUpAlt,
+  faCompress, faCoffee, faCloud, faHead
 } from '@fortawesome/free-solid-svg-icons';
 
-// Add FontAwesome icons to library
+// Add FontAwesome icons to library (updated with correct icon names)
 library.add(
-  faDumbbell, faFireAlt, faWind, faSyncAlt, faWalking, faArrowsAltH,
-  faChevronDown, faShoeprints, faArrowUp, faChevronUp, faArrowDown,
-  faHands, faMountain, faHandPointUp, faExpand, faRunning, faLevelUpAlt,
-  faCompress, faCoffee, faCloud, faHeadSide
+  faDumbbell, faFire, faWind, faSync, faWalking, faArrowsAltH,
+  faChevronDown, faShoes, faArrowUp, faChevronUp, faArrowDown,
+  faHandPaper, faMountain, faHand, faExpand, faRunning, faLevelUpAlt,
+  faCompress, faCoffee, faCloud, faHead
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
