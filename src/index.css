@@ -3,9 +3,41 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #FFF3C7;
+  @apply bg-light-cream min-h-screen font-sans;
+}
+
+.app-container {
+  @apply max-w-md w-full mx-auto bg-light-cream rounded-2xl shadow-lg overflow-hidden p-8;
+}
+
+.btn {
+  @apply bg-gradient-to-r from-vivid-pink to-soft-pink text-white border-none py-3 px-6 rounded-full text-base cursor-pointer block mx-auto my-4 transition-transform duration-200 hover:translate-y-[-2px] hover:shadow-lg active:translate-y-0 active:shadow-md;
+}
+
+.progress-bar-container {
+  @apply h-2.5 bg-soft-peach rounded-md my-5 overflow-hidden;
+}
+
+.progress-bar {
+  @apply h-full w-0 bg-gradient-to-r from-vivid-pink to-soft-pink rounded-md transition-all duration-500 ease-linear;
+}
+
+.phase-indicator {
+  @apply absolute top-4 right-4 bg-soft-peach px-3 py-1.5 rounded-full text-sm flex items-center gap-1.5;
+}
+
+.exercise-icon {
+  @apply text-5xl text-vivid-pink my-5;
+}
+
+.exercise-instruction {
+  @apply bg-soft-peach inline-block px-4 py-2 rounded-full font-bold;
+}
+
+.countdown-overlay {
+  @apply fixed inset-0 bg-light-cream bg-opacity-90 flex justify-center items-center z-50;
+}
+
+.countdown-number {
+  @apply text-8xl font-bold text-vivid-pink animate-pulse-slow;
 }
