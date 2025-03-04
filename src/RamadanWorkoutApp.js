@@ -8,7 +8,7 @@ const RamadanWorkoutApp = () => {
   const [currentPhase, setCurrentPhase] = useState('initial');
   const [currentRound, setCurrentRound] = useState(0);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
-  const [timeRemaining, setTimeRemaining] = useState(1800); // 30 minutes
+  const [timeRemaining, setTimeRemaining] = useState(1800);
   const [exerciseTimeRemaining, setExerciseTimeRemaining] = useState(40);
   const [workoutComplete, setWorkoutComplete] = useState(false);
   const [currentExercise, setCurrentExercise] = useState(null);
@@ -33,7 +33,7 @@ const RamadanWorkoutApp = () => {
 
       setExerciseTimeRemaining(prev => {
         if (prev <= 0) {
-          // Logic to move to next exercise
+          // Move to next exercise logic would go here
           return 40;
         }
         return prev - 1;
@@ -48,7 +48,7 @@ const RamadanWorkoutApp = () => {
 
   const resumeWorkout = () => {
     setIsPaused(false);
-    startWorkout(); // Simplified, would need more complex resume logic
+    startWorkout();
   };
 
   const resetWorkout = () => {
@@ -128,7 +128,7 @@ const RamadanWorkoutApp = () => {
                 )}
                 
                 <div className="w-full bg-[#FEC7B4] rounded-full h-2 mb-4">
-                  {/* Progress bar logic could be added here */}
+                  {/* Progress bar placeholder */}
                 </div>
 
                 <div className="flex justify-center space-x-4">
