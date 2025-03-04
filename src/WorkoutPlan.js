@@ -24,7 +24,7 @@ const WorkoutPlan = {
         name: "Lower Body Focus",
         exercises: [
           { name: "Squats", icon: "chevron-down", workDuration: 40, restDuration: 20 },
-          { name: "Lunges", icon: "shoes", workDuration: 40, restDuration: 20 },
+          { name: "Lunges", icon: "walking", workDuration: 40, restDuration: 20 }, // Changed from shoes to walking
           { name: "Calf Raises", icon: "arrow-up", workDuration: 40, restDuration: 20 },
           { name: "Glute Bridges", icon: "chevron-up", workDuration: 40, restDuration: 20 },
           { name: "Side Leg Raises", icon: "arrows-alt-h", workDuration: 40, restDuration: 20 }
@@ -34,7 +34,7 @@ const WorkoutPlan = {
         name: "Upper Body & Core",
         exercises: [
           { name: "Push-ups", icon: "arrow-down", workDuration: 40, restDuration: 20 },
-          { name: "Plank", icon: "hand-paper", workDuration: 40, restDuration: 20 },
+          { name: "Plank", icon: "grip-horizontal", workDuration: 40, restDuration: 20 }, // Changed icon
           { name: "Tricep Dips", icon: "arrow-down", workDuration: 40, restDuration: 20 },
           { name: "Mountain Climbers", icon: "mountain", workDuration: 40, restDuration: 20 },
           { name: "Shoulder Taps", icon: "hand", workDuration: 40, restDuration: 20 }
@@ -55,7 +55,7 @@ const WorkoutPlan = {
         exercises: [
           { name: "Crunches", icon: "compress", workDuration: 40, restDuration: 20 },
           { name: "Russian Twists", icon: "sync", workDuration: 40, restDuration: 20 },
-          { name: "Plank", icon: "hand-paper", workDuration: 40, restDuration: 20 },
+          { name: "Plank", icon: "grip-horizontal", workDuration: 40, restDuration: 20 }, // Changed icon
           { name: "Leg Raises", icon: "arrow-up", workDuration: 40, restDuration: 20 },
           { name: "Slow Mountain Climbers", icon: "mountain", workDuration: 40, restDuration: 20 }
         ]
@@ -71,7 +71,7 @@ const WorkoutPlan = {
       { name: "Hamstring Stretch", icon: "arrow-down", duration: 30 },
       { name: "Quadriceps Stretch", icon: "arrow-up", duration: 30 },
       { name: "Side Stretch", icon: "arrows-alt-h", duration: 30 },
-      { name: "Neck Stretch", icon: "head", duration: 30 }
+      { name: "Neck Stretch", icon: "user", duration: 30 } // Changed from head to user
     ]
   }
 };
