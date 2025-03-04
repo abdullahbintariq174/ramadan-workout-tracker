@@ -75,7 +75,7 @@ const RamadanWorkoutApp = () => {
       className="min-h-screen flex flex-col items-center justify-center p-4"
       style={{ 
         backgroundColor: '#FFF3C7', 
-        fontFamily: '"Segoe UI", sans-serif' 
+        fontFamily: 'Segoe UI, sans-serif' 
       }}
     >
       {workoutComplete ? (
@@ -127,4 +127,34 @@ const RamadanWorkoutApp = () => {
                   </div>
                 )}
                 
-                <div className="w-full bg-[#FEC7B4] rounde
+                <div className="w-full bg-[#FEC7B4] rounded-full h-2 mb-4">
+                  {/* Progress bar logic could be added here */}
+                </div>
+
+                <div className="flex justify-center space-x-4">
+                  {!isPaused ? (
+                    <button 
+                      onClick={pauseWorkout}
+                      className="bg-[#FC819E] text-white px-6 py-2 rounded-full hover:bg-[#F7418F] transition"
+                    >
+                      <Pause className="inline mr-2" /> Pause
+                    </button>
+                  ) : (
+                    <button 
+                      onClick={resumeWorkout}
+                      className="bg-[#FC819E] text-white px-6 py-2 rounded-full hover:bg-[#F7418F] transition"
+                    >
+                      <Play className="inline mr-2" /> Resume
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default RamadanWorkoutApp;
