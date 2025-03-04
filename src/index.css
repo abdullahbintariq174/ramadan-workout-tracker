@@ -1,43 +1,100 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
-  @apply bg-light-cream min-h-screen font-sans;
+  background-color: #FFF3C7;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.app-container {
-  @apply max-w-md w-full mx-auto bg-light-cream rounded-2xl shadow-lg overflow-hidden p-8;
+.container {
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  background-color: #FEC7B4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.btn {
-  @apply bg-gradient-to-r from-vivid-pink to-soft-pink text-white border-none py-3 px-6 rounded-full text-base cursor-pointer block mx-auto my-4 transition-transform duration-200 hover:translate-y-[-2px] hover:shadow-lg active:translate-y-0 active:shadow-md;
+h1 {
+  color: #F7418F;
+  margin-top: 10px;
 }
 
-.progress-bar-container {
-  @apply h-2.5 bg-soft-peach rounded-md my-5 overflow-hidden;
+.timer {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #FC819E;
 }
 
-.progress-bar {
-  @apply h-full w-0 bg-gradient-to-r from-vivid-pink to-soft-pink rounded-md transition-all duration-500 ease-linear;
+.progress-container {
+  width: 100%;
+  background: #FFF3C7;
+  border-radius: 5px;
+  height: 10px;
+  margin: 20px 0;
+}
+
+.progress {
+  height: 10px;
+  background: linear-gradient(to right, #F7418F, #FC819E);
+  border-radius: 5px;
+  width: 0%;
+  transition: width 1s linear;
+}
+
+.exercise {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #333;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .phase-indicator {
-  @apply absolute top-4 right-4 bg-soft-peach px-3 py-1.5 rounded-full text-sm flex items-center gap-1.5;
+  background-color: #F7418F;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.exercise-icon {
-  @apply text-5xl text-vivid-pink my-5;
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.exercise-instruction {
-  @apply bg-soft-peach inline-block px-4 py-2 rounded-full font-bold;
+.buttons button {
+  background-color: #F7418F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
-.countdown-overlay {
-  @apply fixed inset-0 bg-light-cream bg-opacity-90 flex justify-center items-center z-50;
+.buttons button:hover {
+  background-color: #FC819E;
 }
 
-.countdown-number {
-  @apply text-8xl font-bold text-vivid-pink animate-pulse-slow;
+.buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.icon {
+  margin-right: 5px;
 }
